@@ -13,7 +13,6 @@ function Blob() {
   return (
     <Float speed={1.2} rotationIntensity={0.6} floatIntensity={1.2}>
       <Icosahedron ref={ref} args={[1.6, 4]}>
-        {/* @ts-expect-error drei distort */}
         <MeshDistortMaterial
           color="#3344ff"
           emissive="#1122aa"

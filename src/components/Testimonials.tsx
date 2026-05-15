@@ -12,7 +12,7 @@ export function Testimonials() {
   return (
     <section className="relative overflow-hidden py-32">
       <div className="mx-auto max-w-7xl px-6">
-        <SectionHeading index="05" kicker="Recommandations" title="Témoignages." />
+        <SectionHeading index="06" kicker="Recommandations" title="Témoignages." />
       </div>
 
       <div className="relative overflow-hidden">

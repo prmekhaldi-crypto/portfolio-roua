@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/client"
+      }
+    },
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "^/favicon\\.ico$",
+      "dest": "/dist/client/favicon.ico"
+    },
+    {
+      "src": "^/assets/(.*)$",
+      "dest": "/dist/client/assets/$1"
+    },
+    {
+      "src": "^/(.*)$",
+      "dest": "/api/index.js"
+    }
+  ]
+}

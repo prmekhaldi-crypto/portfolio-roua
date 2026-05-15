@@ -104,10 +104,10 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 4, duration: 1 }}
-          className="absolute bottom-10 left-6 hidden items-center gap-3 text-xs uppercase tracking-[0.3em] text-muted-foreground md:flex"
+          className="mt-6 flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-muted-foreground"
         >
           <motion.span
             animate={{ y: [0, 8, 0] }}

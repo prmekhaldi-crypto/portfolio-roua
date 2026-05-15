@@ -4,9 +4,9 @@ import { SectionHeading } from "./SectionHeading";
 import { Magnetic } from "./Magnetic";
 
 const SOCIALS = [
-  { label: "Email", href: "mailto:roua@example.com", icon: "✉" },
-  { label: "LinkedIn", href: "#", icon: "in" },
-  { label: "GitHub", href: "#", icon: "</>" },
+  { label: "Téléphone", href: "tel:+213553857894", icon: "☎" },
+  { label: "Email", href: "mailto:pr_mekhaldi@esi.dz", icon: "✉" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/roua-mekhaldi", icon: "in" },
 ];
 
 export function Contact() {
@@ -23,7 +23,7 @@ export function Contact() {
     <section id="contact" className="relative overflow-hidden py-32">
       <div className="absolute inset-0" style={{ background: "radial-gradient(circle at 50% 100%, oklch(0.3 0.2 268 / 0.4), transparent 60%)" }} />
       <div className="relative mx-auto max-w-5xl px-6">
-        <SectionHeading index="07" kicker="Contact" title="Travaillons ensemble." />
+        <SectionHeading index="08" kicker="Contact" title="Travaillons ensemble." />
 
         <div className="grid gap-12 md:grid-cols-5">
           <motion.form

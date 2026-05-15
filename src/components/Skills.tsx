@@ -3,33 +3,35 @@ import { SectionHeading } from "./SectionHeading";
 
 const GROUPS = [
   {
-    title: "Frontend",
+    title: "Langages",
     items: [
-      { name: "React", lvl: 95 },
-      { name: "Next.js", lvl: 88 },
-      { name: "TypeScript", lvl: 90 },
-      { name: "Tailwind CSS", lvl: 95 },
-      { name: "GSAP", lvl: 85 },
+      { name: "Pascal", lvl: 100 },
+      { name: "C / C++", lvl: 90 },
+      { name: "Assembleur", lvl: 90 },
+      { name: "HTML & CSS", lvl: 85 },
+      { name: "JavaScript", lvl: 60 },
+      { name: "Tailwind CSS", lvl: 40 },
+      { name: "React", lvl: 25 },
     ],
   },
   {
-    title: "Langages",
+    title: "Langues",
     items: [
-      { name: "JavaScript", lvl: 95 },
-      { name: "Python", lvl: 80 },
-      { name: "Java", lvl: 75 },
-      { name: "C / C++", lvl: 70 },
-      { name: "SQL", lvl: 78 },
+      { name: "Arabe", lvl: 100 },
+      { name: "Français", lvl: 95 },
+      { name: "Anglais", lvl: 90 },
+      { name: "Espagnol", lvl: 85 },
+      { name: "Allemand", lvl: 30 },
     ],
   },
   {
     title: "Outils",
     items: [
-      { name: "Git", lvl: 90 },
-      { name: "Figma", lvl: 88 },
-      { name: "Docker", lvl: 70 },
-      { name: "Vite", lvl: 92 },
-      { name: "Three.js", lvl: 65 },
+      { name: "Figma & XD", lvl: 98 },
+      { name: "AI", lvl: 80 },
+      { name: "GitHub & Git", lvl: 99 },
+      { name: "Photoshop", lvl: 90 },
+      { name: "VS Code", lvl: 90 },
     ],
   },
 ];
@@ -38,7 +40,7 @@ export function Skills() {
   return (
     <section id="competences" className="relative py-32">
       <div className="mx-auto max-w-7xl px-6">
-        <SectionHeading index="03" kicker="Stack" title="Compétences." />
+        <SectionHeading index="04" kicker="Stack" title="Compétences." />
 
         <div className="grid gap-6 md:grid-cols-3">
           {GROUPS.map((g, gi) => (

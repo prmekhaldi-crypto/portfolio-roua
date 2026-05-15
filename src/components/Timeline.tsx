@@ -2,17 +2,17 @@ import { motion } from "framer-motion";
 import { SectionHeading } from "./SectionHeading";
 
 const TIMELINE = [
-  { year: "2026", title: "Stage Frontend Developer", place: "Studio créatif · Paris", desc: "Développement d'interfaces animées pour des marques internationales." },
-  { year: "2025", title: "Freelance · UI Engineer", place: "Indépendante", desc: "Refontes web, design systems et intégrations performantes pour startups." },
-  { year: "2024", title: "Licence en Informatique", place: "Université", desc: "Spécialisation en génie logiciel et interaction homme-machine." },
-  { year: "2023", title: "Premiers projets open-source", place: "GitHub", desc: "Contributions à des bibliothèques d'animation et de composants React." },
+  { year: "2026", title: "Responsable story · AUP 4", place: "Événement étudiant", desc: "Coordination du récit visuel et de la communication digitale de l'événement AUP 4." },
+  { year: "2026", title: "Membre active · Club ETIC", place: "Association étudiante", desc: "Participation aux projets, ateliers et actions de communication du club." },
+  { year: "2026", title: "Membre active · Club CSE (UI/UX)", place: "Club design", desc: "Co-conception d'expériences utilisateur et maquettes pour des événements étudiants." },
+  { year: "2025/2026", title: "Projets collaboratifs", place: "Université", desc: "Réalisations de la Pomodoro App, de l'application touristique et d'un outil de traitement de fichiers." },
 ];
 
 export function Timeline() {
   return (
     <section className="relative py-32">
       <div className="mx-auto max-w-5xl px-6">
-        <SectionHeading index="04" kicker="Parcours" title="Expérience." />
+        <SectionHeading index="05" kicker="Parcours" title="Expérience." />
 
         <div className="relative">
           <div className="absolute left-4 top-0 h-full w-px bg-border md:left-1/2" />

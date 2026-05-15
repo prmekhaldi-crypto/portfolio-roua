@@ -1,13 +1,17 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { SectionHeading } from "./SectionHeading";
+import rouaImg from "../roua.jpg";
 
-const TRAITS = ["Curieuse", "Rigoureuse", "Créative", "Empathique", "Passionnée", "Détail-orientée"];
+const TRAITS = ["C / Pascal / Assembleur 90", "HTML & CSS", "Tailwind CSS", "Arabe", "Français", "Anglais"];
 
 export function About() {
+  const [imageError, setImageError] = useState(false);
+
   return (
     <section id="apropos" className="relative overflow-hidden py-32">
       <div className="mx-auto max-w-7xl px-6">
-        <SectionHeading index="01" kicker="À propos" title="Une étudiante. Une vision." />
+        <SectionHeading index="01" kicker="À propos" title="Une étudiante. Une vision concrète." />
 
         <div className="grid gap-16 md:grid-cols-12">
           <motion.div
@@ -18,13 +22,23 @@ export function About() {
             className="md:col-span-5"
           >
             <div className="glass relative aspect-[4/5] overflow-hidden rounded-2xl">
+              {!imageError ? (
+                <img
+                  src={rouaImg}
+                  alt="Roua Mekhaldi"
+                  className="h-full w-full object-cover object-top"
+                  style={{ objectPosition: "center 40%" }} 
+                  onError={() => setImageError(true)}
+                />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center bg-slate-950 text-center text-8xl font-display text-primary-foreground/80">
+                  R
+                </div>
+              )}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-transparent to-transparent" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="font-display text-[8rem] text-primary-foreground/20">R</span>
-              </div>
               <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-xs uppercase tracking-[0.25em] text-muted-foreground">
-                <span>Alger · Paris</span>
-                <span>2026</span>
+                <span></span>
+                <span></span>
               </div>
             </div>
           </motion.div>
@@ -37,9 +51,9 @@ export function About() {
               transition={{ duration: 0.8 }}
               className="text-2xl font-light leading-relaxed md:text-3xl"
             >
-              Je suis Roua — étudiante en informatique et développeuse frontend. Je conçois des
-              interfaces où <span className="italic text-royal">la précision</span> rencontre
-              <span className="italic text-royal"> l'émotion</span>.
+              Je suis Roua — étudiante en informatique et développeuse front-end. Je conçois des
+              interfaces où <span className="italic text-royal">la logique</span> rencontre
+              <span className="italic text-royal"> l'expérience utilisateur</span>.
             </motion.p>
 
             <motion.p
@@ -49,11 +63,34 @@ export function About() {
               transition={{ duration: 0.8, delay: 0.15 }}
               className="text-base leading-relaxed text-muted-foreground md:text-lg"
             >
-              Passionnée par le design d'interaction, le motion design et les architectures front
-              modernes, je transforme des idées complexes en expériences claires, rapides et
-              mémorables. Mon terrain de jeu : React, TypeScript, GSAP — et tout ce qui permet
-              de raconter une histoire à l'écran.
+              Je travaille avec des technologies comme C, Pascal, Assembleur 90, HTML, CSS, un peu de
+              JavaScript et Tailwind CSS. J'ai réalisé des projets en collaboration : une Pomodoro
+              App avec Issam Elghettas, une application touristique avec Sirine Ayadi, et un outil
+              de traitement de fichiers pour union, intersection et différence avec Ayadi Sirine.
             </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="text-base leading-relaxed text-muted-foreground md:text-lg"
+            >
+              Je parle arabe, français, anglais, espagnol et un peu d'allemand. J'investis aussi mon
+              énergie dans la vie associative : responsable story pour l'AUP 4, membre active du
+              Club ETIC et membre active du Club CSE sur les sujets UI/UX.
+            </motion.p>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="glass rounded-3xl p-6">
+                <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary-glow">Responsabilités</p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">Responsable story pour l'événement AUP 4 et coordination du contenu visuel.</p>
+              </div>
+              <div className="glass rounded-3xl p-6">
+                <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary-glow">Clubs</p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">Membre active du Club ETIC et du Club CSE (UI/UX).</p>
+              </div>
+            </div>
 
             <div className="flex flex-wrap gap-2 pt-4">
               {TRAITS.map((t, i) => (

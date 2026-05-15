@@ -6,6 +6,7 @@ const links = [
   { href: "#accueil", label: "Accueil" },
   { href: "#apropos", label: "À propos" },
   { href: "#projets", label: "Projets" },
+  { href: "#designs", label: "Designs" },
   { href: "#competences", label: "Compétences" },
   { href: "#contact", label: "Contact" },
 ];
@@ -18,9 +19,13 @@ export function Nav() {
       <header className="fixed left-0 right-0 top-0 z-50">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <Magnetic>
-            <a href="#accueil" className="font-display text-lg tracking-tight">
-              <span className="text-foreground">MEKHALDI</span>
-              <span className="text-primary-glow">.</span>
+            <a
+              href="/cv_roua.pdf"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex items-center rounded-full bg-primary px-5 py-2 text-sm uppercase tracking-[0.18em] text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              CV
             </a>
           </Magnetic>
 

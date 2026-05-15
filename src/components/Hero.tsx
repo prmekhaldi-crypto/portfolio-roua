@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Particles } from "./Particles";
-import { Hero3D } from "./Hero3D";
 import { Magnetic } from "./Magnetic";
 
 const ROLES = ["Développeuse Frontend", "Étudiante en Informatique", "Créatrice d'Expériences Web"];

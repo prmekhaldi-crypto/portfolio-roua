@@ -10,7 +10,6 @@ import { Projects } from "@/components/Projects";
 import { Designs } from "@/components/Designs";
 import { Skills } from "@/components/Skills";
 import { Timeline } from "@/components/Timeline";
-import { Testimonials } from "@/components/Testimonials";
 import { Blog } from "@/components/Blog";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
@@ -42,7 +41,6 @@ function Index() {
         <Designs />
         <Skills />
         <Timeline />
-        <Testimonials />
         <Blog />
         <Contact />
       </main>

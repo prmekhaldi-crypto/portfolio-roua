@@ -20,9 +20,7 @@ export function Hero() {
       {/* Layers */}
       <div className="absolute inset-0" style={{ background: "var(--gradient-radial)" }} />
       <div className="absolute inset-0 opacity-60"><Particles /></div>
-      <div className="absolute right-0 top-0 h-full w-full opacity-90 md:w-[55%]"><Hero3D /></div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
-
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-32">
         <motion.p
           initial={{ opacity: 0, y: 20 }}

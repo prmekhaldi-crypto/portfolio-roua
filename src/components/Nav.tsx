@@ -20,7 +20,7 @@ export function Nav() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <Magnetic>
             <a
-              href="/cv_roua.pdf"
+              href="https://portfolio-roua-roua.vercel.app/cv_roua.pdf"
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center rounded-full bg-primary px-5 py-2 text-sm uppercase tracking-[0.18em] text-primary-foreground transition-colors hover:bg-primary/90"
